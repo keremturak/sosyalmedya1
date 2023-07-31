@@ -1,0 +1,28 @@
+server:
+  port: 9092
+
+spring:
+  security:
+    user:
+      name: admin
+      password: root
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: bilgejava8
+    password: bilgeadmin*
+  cloud:
+    compatibility-verifier:
+      enabled: false
+  zipkin:
+    enabled: false
+    base-url: http://localhost:9411
+    service:
+      name: user-service
+  data:
+    mongodb:
+      host: localhost
+      port: 27017
+      database: socialMedia1
+      username: admin
+      password: root
